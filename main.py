@@ -6,7 +6,7 @@ from models import Contact
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, WPRDL!</p>"
+    return jsonify({"contacts": 123})
 
 
 @app.route("/contacts", methods=["GET"])
